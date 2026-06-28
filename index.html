@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Eine farbenfrohe, elegante Geburtstagsseite für Elisa."
+    />
+    <title>Elisa | Geburtstag</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="orb orb--pink" aria-hidden="true"></div>
+    <div class="orb orb--mint" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <main class="page">
+      <section class="hero reveal" id="start">
+        <div class="hero-grid">
+          <figure class="cake-panel" aria-label="Geburtstagskuchen mit Kerzen">
+            <div class="cake-card">
+              <div class="plate" aria-hidden="true"></div>
+
+              <div class="cake">
+                <div class="layer layer--bottom" aria-hidden="true"></div>
+                <div class="layer layer--top" aria-hidden="true"></div>
+                <div class="icing-drip icing-drip--left" aria-hidden="true"></div>
+                <div class="icing-drip icing-drip--center" aria-hidden="true"></div>
+                <div class="icing-drip icing-drip--right" aria-hidden="true"></div>
+                <div class="sparkles" aria-hidden="true"></div>
+
+                <div class="candles">
+                  <button class="candle" type="button" data-candle aria-pressed="false" aria-label="Kerze 1 ausblasen">
+                    <span class="candle-body"></span>
+                    <span class="wick"></span>
+                    <span class="flame"></span>
+                  </button>
+                  <button class="candle candle--tall" type="button" data-candle aria-pressed="false" aria-label="Kerze 2 ausblasen">
+                    <span class="candle-body"></span>
+                    <span class="wick"></span>
+                    <span class="flame"></span>
+                  </button>
+                  <button class="candle" type="button" data-candle aria-pressed="false" aria-label="Kerze 3 ausblasen">
+                    <span class="candle-body"></span>
+                    <span class="wick"></span>
+                    <span class="flame"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <div class="hero-copy">
+            <p class="eyebrow">29. Juni 2002</p>
+            <h1>Herzlichen Glückwunsch, Maus!</h1>
+            <p class="lead">
+              Tippe die Kerzen aus----- !!
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button--accent" href="#galerie">Zu den Fotos</a>
+              <a class="button button--ghost" href="#schluss">Zum Schluss</a>
+            </div>
+
+            <figure
+              class="hero-media media-slot"
+              data-media-slot
+              data-image-base="bild1"
+            >
+              <div class="media-placeholder">
+                <span>Dein Hauptbild</span>
+              </div>
+              <img class="media-image" data-media-image alt="Elisa" hidden />
+            </figure>
+          </div>
+        </div>
+
+        <div class="celebration-card" data-age-card hidden>
+          <p class="eyebrow">Geschafft</p>
+          <h2>Herzlichen Glückwunsch, Maus!</h2>
+          <div class="age-line" aria-live="polite">
+            <span>Elisa wird</span>
+            <strong class="age-number" data-age-number>24</strong>
+            <span>Jahre alt</span>
+          </div>
+
+          <div class="celebration-copy">
+            <p>Herzlichen Glückwunsch zu deinem 24sten Geburtstag, ich wünsche dir alles alles Gute mausi!</p>
+            <p>Zu gerne würde ich deinen Geburtstag mit dir feiern und dich verwöhnen, dir zeigen wie besonders du für mich bist und dir den Tag so schön machen wie du es verdienst.</p>
+            <p>Auch wenn ich heute nicht bei dir sein kann, bist du (wie immer) in meinen Gedanken und mein Herz ist bei dir.</p>
+            <p>Ich hab dich ganz doll lieb, genieß deinen Tag!<br />Dein Dustin</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="galerie">
+        <div class="gallery-grid" data-gallery-grid></div>
+      </section>
+
+      <section class="section reveal" id="schluss">
+        <div class="closing-card">
+          <p class="eyebrow">Zum Schluss</p>
+          <p class="closing-lead">Ich hoffe du schaffst alles was du dir vornimmst, und wirst glücklich.</p>
+          <p>Und ich hoffe ich kann ein Teil von deinem Leben sein und du eins von meinem.</p>
+          <p class="closing-signature">alles liebe dein dustin</p>
+        </div>
+      </section>
+    </main>
+
+    <audio data-background-audio preload="auto" src="assets/music.mp3"></audio>
+    <button
+      class="music-toggle"
+      type="button"
+      data-music-toggle
+      aria-pressed="false"
+      aria-label="Musik starten oder stummschalten"
+    >
+      Musik starten
+    </button>
+  </body>
+</html>
